@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Assignment one
+            Console.WriteLine("Assignment one - Reading in Colours");
+            Console.WriteLine();
+            List<string> colours = new List<string>();
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Please enter a colour: ");
+                colours.Add(Console.ReadLine());
+            }
+            Console.WriteLine(string.Join(", ", colours));
         }
     }
 }
