@@ -15,6 +15,7 @@
                 Console.WriteLine("Please enter a colour: ");
                 colours.Add(Console.ReadLine());
             }
+            Console.WriteLine();
             Console.WriteLine(string.Join(", ", colours));
             Console.WriteLine();
             Console.WriteLine(colours[generator.Next(0, 6)]);
