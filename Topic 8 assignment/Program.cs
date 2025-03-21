@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            Random generator = new Random();
+
             //Assignment one
             Console.WriteLine("Assignment one - Reading in Colours");
             Console.WriteLine();
@@ -14,6 +16,8 @@
                 colours.Add(Console.ReadLine());
             }
             Console.WriteLine(string.Join(", ", colours));
+            Console.WriteLine();
+            Console.WriteLine(colours[generator.Next(0, 6)]);
         }
     }
 }
