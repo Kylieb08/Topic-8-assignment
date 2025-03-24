@@ -19,10 +19,11 @@ namespace Topic_8_assignment
             {
                 Console.WriteLine("Please enter a colour: ");
                 colours.Add(Console.ReadLine());
+                Console.WriteLine();
             }
-            Console.WriteLine();
             Console.WriteLine(string.Join(", ", colours));
             Console.WriteLine();
+            Console.WriteLine("Here is a random colour:");
             Console.WriteLine(colours[generator.Next(0, 6)]);
             Console.WriteLine();
             Console.WriteLine("Press enter to continue");
